@@ -7,7 +7,7 @@
 
 import Foundation
 
-//findParent()
+findParent()
 /*
  Sample Input1
  7

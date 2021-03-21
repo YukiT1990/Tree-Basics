@@ -12,7 +12,8 @@ func findParent() {
     print("Please input tree for findParent")
     var parents = [Int:Int]()
     var alreadyExist = [Int:Bool]()
-    let n = Int(readLine()!)!
+    let preN = readLine()!.split(separator: " ").map { Int($0) }
+    let n = preN[0]!
     alreadyExist[1] = true
     for i in 2...n {
         alreadyExist[i] = false
@@ -47,7 +48,8 @@ func longestDistance() {
     var distance = [Int:Int]()
     var paths = [Int:[Dictionary<Int, Int>]]()
     
-    let n = Int(readLine()!)!
+    let preN = readLine()!.split(separator: " ").map { Int($0) }
+    let n = preN[0]!
     for i in 1...n {
         alreadyPassed[i] = false
     }
